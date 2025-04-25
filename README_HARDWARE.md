@@ -46,8 +46,9 @@ Power Requirements
 
 Assembly Photos
 
-- ![PCB Top View](images/Screenshot 2025-03-27 231332.png)
-- ![PCB in Enclosure](../images/assembled_inside.jpg)
+
+
+- ![PCB Top View](images/Screenshot%202025-03-27%20231332.png)
 - ![Wiring Diagram](../images/wiring_diagram.png)
 
 ---
