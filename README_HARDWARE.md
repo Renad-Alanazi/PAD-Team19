@@ -5,7 +5,8 @@ This document outlines the hardware components, schematics, power setup, and con
 
  Schematics 
 
-- ![Schematic OF PAD](images/Screenshot 2025-03-27 231332.png)
+- ![Wiring Diagram](images/Screenshot%202025-04-18%20132853.png)
+
 - ![Schematic OF power system](images/Screenshot 2025-03-27 231332.png)
 
 PCB Highlights:
