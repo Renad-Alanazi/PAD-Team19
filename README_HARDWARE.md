@@ -7,7 +7,8 @@ This document outlines the hardware components, schematics, power setup, and con
 
 - ![Wiring Diagram](images/Screenshot%202025-04-18%20132853.png)
 
-- ![Schematic OF power system](images/Screenshot 2025-03-27 231332.png)
+- ![Power system](images/Screenshot%202025-04-18%20141745.png)
+
 
 PCB Highlights:
 - 2-layer custom PCB
