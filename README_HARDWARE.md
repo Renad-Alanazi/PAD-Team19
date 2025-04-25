@@ -3,11 +3,10 @@ Overview
 
 This document outlines the hardware components, schematics, power setup, and connection instructions for the PAD, a wearable designed to detect falls and monitor elderly users' health metrics.
 
- Schematics & PCB
+ Schematics 
 
-- **Schematic PDF**: [`PAD_Schematic.pdf`](../hardware/PAD_Schematic.pdf)
-- **PCB Layout PDF**: [`PAD_PCB.pdf`](../hardware/PAD_PCB.pdf)
-- **EasyEDA Files**: Included in `/hardware/` folder
+- ![Schematic OF PAD](images/Screenshot 2025-03-27 231332.png)
+- ![Schematic OF power system](images/Screenshot 2025-03-27 231332.png)
 
 PCB Highlights:
 - 2-layer custom PCB
@@ -47,7 +46,7 @@ Power Requirements
 
 Assembly Photos
 
-- ![PCB Top View](../images/pcb_top.jpg)
+- ![PCB Top View](images/Screenshot 2025-03-27 231332.png)
 - ![PCB in Enclosure](../images/assembled_inside.jpg)
 - ![Wiring Diagram](../images/wiring_diagram.png)
 
