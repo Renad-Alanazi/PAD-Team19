@@ -1,18 +1,15 @@
-# Hardware Documentation – Personal Alert Device (PAD)
+# Hardware for the Personal Alert Device (PAD)
+Overview
 
-## 📦 Overview
+This document outlines the hardware components, schematics, power setup, and connection instructions for the PAD, a wearable designed to detect falls and monitor elderly users' health metrics.
 
-This document outlines the hardware components, schematics, power setup, and connection instructions for the PAD (Personal Alert Device), a wearable designed to detect falls and monitor elderly users' health metrics.
-
----
-
-## 📐 Schematics & PCB
+ Schematics & PCB
 
 - **Schematic PDF**: [`PAD_Schematic.pdf`](../hardware/PAD_Schematic.pdf)
 - **PCB Layout PDF**: [`PAD_PCB.pdf`](../hardware/PAD_PCB.pdf)
 - **EasyEDA Files**: Included in `/hardware/` folder
 
-### 🛠 PCB Highlights:
+###  PCB Highlights:
 - 2-layer custom PCB
 - Mount points for Seeed Studio XIAO nRF52840 Sense
 - Pads for sensors and battery connector
