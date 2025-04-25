@@ -1,16 +1,18 @@
-Hardware Documentation – Personal Alert Device (PAD)
+# Hardware Documentation – Personal Alert Device (PAD)
 
-Overview
+## 📦 Overview
 
 This document outlines the hardware components, schematics, power setup, and connection instructions for the PAD (Personal Alert Device), a wearable designed to detect falls and monitor elderly users' health metrics.
 
-Schematics & PCB
+---
+
+## 📐 Schematics & PCB
 
 - **Schematic PDF**: [`PAD_Schematic.pdf`](../hardware/PAD_Schematic.pdf)
 - **PCB Layout PDF**: [`PAD_PCB.pdf`](../hardware/PAD_PCB.pdf)
 - **EasyEDA Files**: Included in `/hardware/` folder
 
-PCB Highlights:
+### 🛠 PCB Highlights:
 - 2-layer custom PCB
 - Mount points for Seeed Studio XIAO nRF52840 Sense
 - Pads for sensors and battery connector
@@ -18,7 +20,7 @@ PCB Highlights:
 
 ---
 
- Hardware Components
+## 🔌 Hardware Components
 
 | Component                        | Part Number/Model        | Vendor           | Notes                               |
 |----------------------------------|--------------------------|------------------|-------------------------------------|
@@ -35,13 +37,17 @@ PCB Highlights:
 
 ---
 
-Power Requirements
+## ⚡ Power Requirements
 
-Lithium Battery: 3.7V, 300mA, 1100mAh | Powers all onboard systems
-Wireless Charging: 5V, 300mA, Charges battery via receiver coil   
-Microcontroller: 3.3V, 50mA, Supplied from battery regulator     
+| Source             | Voltage | Current | Notes                               |
+|-------------------|---------|---------|-------------------------------------|
+| Lithium Battery   | 3.7V    | 1100mAh | Powers all onboard systems          |
+| Wireless Charging | 5V      | ~500mA  | Charges battery via receiver coil   |
+| Microcontroller   | 3.3V    | ~40mA   | Supplied from battery regulator     |
 
- Assembly Photos
+---
+
+## 📸 Assembly Photos
 
 - ![PCB Top View](../images/pcb_top.jpg)
 - ![PCB in Enclosure](../images/assembled_inside.jpg)
@@ -52,33 +58,36 @@ Microcontroller: 3.3V, 50mA, Supplied from battery regulator
 ## 🔌 Wiring and Sensor Connections
 
 ### I2C Devices (MAX30102, MLX90614)
-- SCL: D4 
-- SDA: D5
-- VCC: 3.3V
-- GND: GND
+- **SCL**: D4 (GPIO pin on XIAO)
+- **SDA**: D5
+- **VCC**: 3.3V
+- **GND**: GND
 
-Push Button
-- One terminal to D2
-- Other terminal to GND
+### Push Button
+- One terminal to **D2**
+- Other terminal to **GND**
 
-Wireless Charging Receiver
-- +5V output to battery charger input
-- GND to system GND
+### Wireless Charging Receiver
+- **+5V output** to battery charger input
+- **GND** to system GND
 
-LEDs
-- Red: positive terminal to D10, negative terminal to 330Ω → GND
-- Yellow: positive terminal to D3, negative terminal to 330Ω → GND
-- Green: positive terminal to D1, negative terminal to 330Ω → GND
+### LEDs
+- Red: D3 → 330Ω → GND
+- Yellow: D2 (shared via switch logic)
+- Green: D1 → 330Ω → GND
 
+> Note: Button and yellow LED are handled via conditional logic in software.
 
-Setup Instructions
+---
 
-1. Solder all SMD components and microcontroller
-2. Connect sensors and LEDs as per wiring table
-3. Place device in 3D-printed enclosure
-4. Attach battery and test wireless charging
-5. Power on and verify LED indicator behavior
-6. Upload firmware via USB and verify BLE connection
+## 🧰 Setup Instructions
+
+1. **Solder all SMD components and microcontroller**
+2. **Connect sensors and LEDs as per wiring table**
+3. **Place device in 3D-printed enclosure**
+4. **Attach battery and test wireless charging**
+5. **Power on and verify LED indicator behavior**
+6. **Upload firmware via USB and verify BLE connection**
 
 ---
 
