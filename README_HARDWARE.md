@@ -32,7 +32,7 @@ Hardware Components
 | LEDs (Red, Yellow, Green)        | 0805 SMD + 330Ω resistors      | LCSC          | Battery and alert status indicators      |
 | **Buzzer**                       | Passive Buzzer (SMD)           | LCSC          | Audible emergency alert                  |
 
- See full () for orderable parts.
+ 
 
 ---
 
@@ -46,12 +46,13 @@ Power Requirements
 
 ---
 
-Assembly Photos
+PCB schematic 
+
+![PCB Schematic](images/Screenshot%202025-04-25%20123643.png)
+![PCB Layout](images/Screenshot%202025-04-25%20123738.png)
+![PCB Top View](images/Screenshot%202025-03-27%20231332.png)
 
 
-
-- ![PCB Top View](images/Screenshot%202025-03-27%20231332.png)
-- ![Wiring Diagram](../images/wiring_diagram.png)
 
 ---
 
