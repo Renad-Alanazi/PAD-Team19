@@ -9,7 +9,7 @@ This document outlines the hardware components, schematics, power setup, and con
 - **PCB Layout PDF**: [`PAD_PCB.pdf`](../hardware/PAD_PCB.pdf)
 - **EasyEDA Files**: Included in `/hardware/` folder
 
-###  PCB Highlights:
+PCB Highlights:
 - 2-layer custom PCB
 - Mount points for Seeed Studio XIAO nRF52840 Sense
 - Pads for sensors and battery connector
@@ -17,7 +17,7 @@ This document outlines the hardware components, schematics, power setup, and con
 
 ---
 
-## 🔌 Hardware Components
+Hardware Components
 
 | Component                        | Part Number/Model        | Vendor           | Notes                               |
 |----------------------------------|--------------------------|------------------|-------------------------------------|
@@ -34,7 +34,7 @@ This document outlines the hardware components, schematics, power setup, and con
 
 ---
 
-## ⚡ Power Requirements
+Power Requirements
 
 | Source             | Voltage | Current | Notes                               |
 |-------------------|---------|---------|-------------------------------------|
@@ -44,7 +44,7 @@ This document outlines the hardware components, schematics, power setup, and con
 
 ---
 
-## 📸 Assembly Photos
+Assembly Photos
 
 - ![PCB Top View](../images/pcb_top.jpg)
 - ![PCB in Enclosure](../images/assembled_inside.jpg)
@@ -52,7 +52,7 @@ This document outlines the hardware components, schematics, power setup, and con
 
 ---
 
-## 🔌 Wiring and Sensor Connections
+Wiring and Sensor Connections
 
 ### I2C Devices (MAX30102, MLX90614)
 - **SCL**: D4 (GPIO pin on XIAO)
@@ -60,24 +60,20 @@ This document outlines the hardware components, schematics, power setup, and con
 - **VCC**: 3.3V
 - **GND**: GND
 
-### Push Button
+Push Button
 - One terminal to **D2**
 - Other terminal to **GND**
 
-### Wireless Charging Receiver
+Wireless Charging Receiver
 - **+5V output** to battery charger input
 - **GND** to system GND
 
-### LEDs
+LEDs
 - Red: D3 → 330Ω → GND
 - Yellow: D2 (shared via switch logic)
 - Green: D1 → 330Ω → GND
 
-> Note: Button and yellow LED are handled via conditional logic in software.
-
----
-
-## 🧰 Setup Instructions
+Setup Instructions
 
 1. **Solder all SMD components and microcontroller**
 2. **Connect sensors and LEDs as per wiring table**
@@ -86,9 +82,9 @@ This document outlines the hardware components, schematics, power setup, and con
 5. **Power on and verify LED indicator behavior**
 6. **Upload firmware via USB and verify BLE connection**
 
----
 
-## 🔗 Reference Documents
+
+ Reference Documents
 
 - [MAX30102 Datasheet (PDF)](https://datasheets.maximintegrated.com/en/ds/MAX30102.pdf)
 - [MLX90614 Datasheet](https://www.melexis.com/-/media/files/documents/datasheets/mlx90614-datasheet-melexis.pdf)
