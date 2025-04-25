@@ -19,16 +19,17 @@ PCB Highlights:
 
 Hardware Components
 
-| Component                        | Part Number/Model        | Vendor           | Used for                               |
-|----------------------------------|--------------------------|------------------|-------------------------------------|
-| Microcontroller                  | Seeed Studio XIAO nRF52840 Sense | Seeed Studio     | BLE, IMU, Microphone onboard        |
-| Heart Rate Sensor               | MAX30102                 | Aliexpress  | Pulse and SpO2 sensor via I2C       |
-| Temperature Sensor              |             | Aliexpress  | Body temperature via I2C            |
-| Push Button                     | Generic                  | LCSC      | For manual emergency alerts         |
-| Wireless Charging Receiver      | SW-WC-RX                 | Amazon           | 5V wireless receiver, copper coil   |
-| Wireless Charging Transmitter   | SW-WC-TX                 | Amazon           | Connected to 5V USB power           |
-| Lithium Battery                 | 3.7V 1100mAh LiPo        | Amazon | Powering the device      |
-| LEDs (Red, Yellow, Green)       | 0805 SMD + 330Ω resistors| LCSC             | Battery status indication/emergancy alert indicator |
+| Component                        | Part Number/Model              | Vendor        | Used For                                 |
+|----------------------------------|--------------------------------|---------------|------------------------------------------|
+| Microcontroller                  | Seeed Studio XIAO nRF52840 Sense | Seeed Studio | BLE communication, onboard IMU and mic   |
+| Heart Rate Sensor                | MAX30102                       | Aliexpress    | Pulse and SpO2 monitoring via I2C        |
+| Temperature Sensor               | MLX90614                       | Aliexpress    | Body temperature monitoring via I2C      |
+| Push Button                      | Generic                        | LCSC          | Manual emergency alert                   |
+| Wireless Charging Receiver       | SW-WC-RX                       | Amazon        | 5V power input through copper coil       |
+| Wireless Charging Transmitter    | SW-WC-TX                       | Amazon        | 5V USB-powered transmission               |
+| Lithium Battery                  | 3.7V 1100mAh LiPo              | Amazon        | Main power supply                        |
+| LEDs (Red, Yellow, Green)        | 0805 SMD + 330Ω resistors      | LCSC          | Battery and alert status indicators      |
+| **Buzzer**                       | Passive Buzzer (SMD)           | LCSC          | Audible emergency alert                  |
 
  See full () for orderable parts.
 
